@@ -21,11 +21,11 @@
         <h2 class="text-center">Make your reservation</h2>
         <br>
         <div class="text-center">
-          <a href="view.html">
+          <a href="/tables">
             <button class="btn btn-lg btn-primary">
               <span class="fa fa-list-alt"></span> View Tables</button>
           </a>
-          <a href="home.html">
+          <a href="/">
             <button class="btn btn-lg btn-default">
               <span class="fa fa-home"></span>
             </button>
@@ -104,7 +104,7 @@
       // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
       // depending on if a tables is available or not.
   
-      $.post("/api/tables", newReservation,
+      $.post("/data/tables", newReservation,
         function(data) {
   
           // If a table is available... tell user they are booked.
